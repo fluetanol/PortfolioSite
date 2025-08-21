@@ -1,0 +1,92 @@
+# Node.js dependencies
+/node_modules/
+
+# Production build output
+/dist/
+/build/
+/*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Cache / Temp
+/.cache/
+/.temp/
+/.tmp/
+/*.cache
+/.parcel-cache
+/.vite
+
+# Test coverage
+/coverage/
+
+# Others
+*.lock
+# Node.js dependencies
+/node_modules/
+
+# Production build output
+/dist/
+/build/
+/*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Cache / Temp
+/.cache/
+/.temp/
+/.tmp/
+/*.cache
+/.parcel-cache
+/.vite
+
+# Test coverage
+/coverage/
+
+# Others
+*.lock

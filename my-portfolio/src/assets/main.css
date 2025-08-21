@@ -1,0 +1,12 @@
+@import './base.css';
+
+html, body, #app {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+#app {
+  max-width: none;  /* 폭 제한 제거 */
+  padding: 0;       /* 필요 시 0으로 */
+}
