@@ -307,6 +307,11 @@ onMounted(() => {
   background: rgba(0, 255, 132, 0.08);
   box-shadow: inset 0 0 0 1px rgba(0, 255, 132, 0.18);
 }
+.nav-link.active {
+  color: #00ff99;
+  background: rgba(0, 255, 153, 0.1);
+  border-radius: 6px;
+}
 
 /* 스크롤 컨테이너가 네브바 높이를 고려해서 스크롤 */
 .snap-root {
