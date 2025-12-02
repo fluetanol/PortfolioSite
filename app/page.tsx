@@ -4,6 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <section>
+
       <div className="flex min-w-[50vw] max-w-full h-screen p-4 gap-6 justify-center items-center">
         
         <div
@@ -16,7 +17,6 @@ export default function Home() {
               alt="Profile picture"
               width={300}
               height={400}
-              priority
             />
           </div>
             <div className = "flex flex-col items-center text-2xl gap-2">
@@ -27,9 +27,8 @@ export default function Home() {
                 alt="Signature"
                 width={24}
                 height={24}
-    
               />
-              <span className = "underline underline-offset-4">Github</span>
+              <span className = "relative after:content-[''] after:absolute after:inset-0 after:w-0 hover:after:w-full after:border-b-2 after:border-black after:transition-all after:duration-300">Github</span>
               </a>
 
               <a className ="flex gap-2 items-center" href="https://www.notion.so/taeseungjeong/taeseungjeong-s-Portfolio-Page-6b2f3fbf3f3b4e1eaed3f5e0e4c8e4b3">
@@ -40,7 +39,7 @@ export default function Home() {
                 height={24}
                 
               />
-              <span className = "underline underline-offset-4">Notion</span>
+              <span className = "relative after:content-[''] after:absolute after:inset-0 after:w-0 hover:after:w-full after:border-b-2 after:border-black after:transition-all after:duration-300">Notion</span>
               </a>
 
             </div>
