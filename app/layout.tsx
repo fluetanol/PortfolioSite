@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { EasterEgg_Inheader } from "./components/easter-egg";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,11 +23,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const menu_items = ["메뉴1", "메뉴2", "메뉴3", "메뉴4"];
+
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+
+        {/* <EasterEgg_Inheader /> */}
+        <header className="fixed flex w-full px-4 h-16 items-center z-50 justify-center bg-white border-b border-black"> 
+         <ul className = "flex w-64 justify-between">
+          {
+            menu_items.map((item, index)=>{
+              return (<li key={index}><a href="">{item}</a></li>
+              );
+            })
+          }
+         </ul>
+        </header>
         {children}
       </body>
     </html>
