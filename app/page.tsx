@@ -46,7 +46,7 @@ export default function Home() {
         </div>
 
         <div aria-label="Introduction" className ="flex flex-col gap-20">
-          <div className ="space-y-2 whitespace-nowrap">
+          <div className ="space-y-2 whitespace-nowrap translate-y-4 opacity-0 hover:opacity-100 hover:translate-y-0 transition-all duration-500">
             <h1 className ="text-6xl font-bold">재미를 구현하는 개발자</h1>
             <h2 className="text-5xl">정태승입니다</h2>
           </div>
