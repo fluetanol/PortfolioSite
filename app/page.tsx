@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section>
+    <div>
 
-      <div className="flex min-w-[50vw] max-w-full h-screen p-4 gap-6 justify-center items-center">
+      <section className="flex min-w-[50vw] max-w-full h-screen p-4 gap-6 justify-center items-center">
         
         <div
         aria-label="Profile Image and Links"
@@ -60,10 +60,11 @@ export default function Home() {
     
 
         </div>
-      </div>
-      <div className="flex justify-center items-center w-full h-screen">
+      </section>
+
+      <section className="flex justify-center items-center w-full h-screen">
           테스트입니다.
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
