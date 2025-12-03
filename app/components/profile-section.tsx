@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { certificationList, educationList, rewardsList } from "../const/profileList";
 import { DateDescriptionList } from "./date-description-list";
 import FullSection from "./full-section";
-import { show_ty6 } from "../utils/observe-animation";
+import { show_fadeinout_ty6 } from "../utils/observe-animation";
 
 
 export default function ProfileSection() {
@@ -13,7 +13,7 @@ export default function ProfileSection() {
     useEffect(()=>{
         const currentDivs = divsRef.current;
         const observer = new IntersectionObserver(
-            show_ty6({isOnceExecute:true}), 
+            show_fadeinout_ty6({isOnceExecute:true}), 
             {threshold:0.2});
         currentDivs.forEach((div) => {
             if (div) observer.observe(div);
